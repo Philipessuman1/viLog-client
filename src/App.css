@@ -1,0 +1,65 @@
+.home_background {
+    width:100%;
+    height: 100%;
+    background-image: url('./assets/hand-shake1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+.scanner-img{
+    width: 4rem;
+    height: 4rem;
+}
+.logIn {
+    border: 2px solid white;
+}
+.logIn:hover{
+    background-color:#E45218 ;
+    
+}
+.errorMessage{
+    color: red;
+}
+.nav-background {
+    background-color: #E45218;
+}
+.form-bgColor{
+    background-color: rgba(66, 65, 65, 0.9);
+    border-radius: 2rem;
+}
+.profile-pic{
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 2%;
+}
+.username{
+    color: whitesmoke;
+}
+.appointment-form{
+    color: antiquewhite;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(66, 65, 65);
+}
+.form-text{
+    color: antiquewhite;
+    font-size: large;
+    font-weight: bolder;
+}
+.background{
+    background-color: rgba(66, 65, 65,0.8);
+    color: antiquewhite;
+}
+.qrImage {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+}
+.qrReaderSize {
+    width: 7rem;
+    height: 7rem;
+}
