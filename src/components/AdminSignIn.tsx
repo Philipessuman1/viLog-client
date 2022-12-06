@@ -16,7 +16,7 @@ const failure = () => toast('unsuccesful')
 
 const handleSubmit = (e: { preventDefault: () => void; }) => {
 	e.preventDefault();
-	axios.post('/adminlogin', {
+	axios.post('https://vilogserverapp.onrender.com/adminlogin', {
 			email: values.email,
 			password: values.password,
 		})

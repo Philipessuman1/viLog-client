@@ -1,18 +1,18 @@
 import axios from "axios";
 
-const EMPLOYEE_API_BASE_URL = "http://localhost:4000";
+const EMPLOYEE_API_BASE_URL = "https://vilogserverapp.onrender.com";
 
 class EmployeeService {
   saveEmployee(employee: { id: string; Name: string; email: string; position: string; contact: string; }) {
-    return axios.post("/addhost", employee);
+    return axios.post("https://vilogserverapp.onrender.com/addhost", employee);
   }
 
   getEmployees() {
-    return axios.get("/hosts");
+    return axios.get("https://vilogserverapp.onrender.com/hosts");
   }
 
   deleteEmployee(id: string) {
-    return axios.delete("/deletehost/:id");
+    return axios.delete("https://vilogserverapp.onrender.com/deletehost/:id");
   }
 
   // updateEmployee(employee: any, id: string) {

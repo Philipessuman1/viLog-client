@@ -15,7 +15,7 @@ const LogOut:React.FC = () => {
     };
 
     const handleLogout = () => {
-      axios.delete('/signoutvisitor/:id').then(response => console.log(response))
+      axios.delete('https://vilogserverapp.onrender.com/signoutvisitor/:id').then(response => console.log(response))
       .catch((err)=> console.log(err))
       navigate('/')
     }

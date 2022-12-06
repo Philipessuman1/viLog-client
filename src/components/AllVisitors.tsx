@@ -22,7 +22,7 @@ const AllVisitors = () => {
     const fetchData = async() => {
       setLoading(true)
       try {
-        const response = await axios.get("http://localhost:4000/visitors")
+        const response = await axios.get("https://vilogserverapp.onrender.com/visitors")
         setAllVisitors(response.data)
       } catch (error) {
         console.log(error)

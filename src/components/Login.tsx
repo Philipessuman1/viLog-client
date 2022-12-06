@@ -25,7 +25,7 @@ const Login = () => {
   } = useForm();
 
   const OnSubmit = (data:{}) => {
-    axios.post('/addvisitor',data).then(response => {
+    axios.post('https://vilogserverapp.onrender.com/addvisitor',data).then(response => {
       try {
         console.log(data)
         notify()

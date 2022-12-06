@@ -15,7 +15,7 @@ const DailyVisitors = () => {
     const fetchData = async() => {
       setLoading(true)
       try {
-        const response = await axios.get("http://localhost:4000/dailyvisits")
+        const response = await axios.get("https://vilogserverapp.onrender.com/dailyvisits")
         setDailyVisits(response.data)
       } catch (error) {
         console.log(error)

@@ -17,7 +17,7 @@ const QrcodeReader:React.FC = () => {
     try {
       if (data) {
         setResult(data?.text);
-        axios.post('/addvisitor',data).then((response)=> console.log(response))
+        axios.post('https://vilogserverapp.onrender.com/addvisitor',data).then((response)=> console.log(response))
         .catch((err)=> console.log(err))
         notify()
         navigate('/')

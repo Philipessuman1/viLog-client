@@ -34,7 +34,7 @@ function checkPassword(form: { password: { value: any; }; confirmPassword: { val
 const handleSubmit = (e: { preventDefault: () => void; }) => {
 	e.preventDefault();
     
-	axios.post('/newadmin', {
+	axios.post('https://vilogserverapp.onrender.com/newAdmin', {
 			email: values.email,
 			password: values.password,
 		})
