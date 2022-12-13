@@ -16,20 +16,20 @@ const navigate = useNavigate()
 const notify = () => toast('sign in successful')
 const failure = () => toast('unsuccesful')
 
-function checkPassword(form: { password: { value: any; }; confirmPassword: { value: any; }; }) {
-    // 👇 get passwords from the field using their name attribute
-    const password = form.password.value;
-    const confirmPassword = form.confirmPassword.value;
+// function checkPassword(form: { password: { value: any }; confirmPassword: { value: any } }) {
+//     // 👇 get passwords from the field using their name attribute
+//     const password = form.password.value;
+//     const confirmPassword = form.confirmPassword.value;
 
-    // 👇 check if both match using if-else condition
-    if (password.value != confirmPassword.value) {
-      alert("Error! Password did not match.");
-      return false;
-    } else {
-      alert("Password Match. Congratulations!");
-      return true;
-    }
-  }
+//     // 👇 check if both match using if-else condition
+//     if (password.value != confirmPassword.value) {
+//       alert("Error! Password did not match.");
+//       return false;
+//     } else {
+//       alert("Password Match. Congratulations!");
+//       return true;
+//     }
+//   }
 
 const handleSubmit = (e: { preventDefault: () => void; }) => {
 	e.preventDefault();
@@ -83,7 +83,7 @@ const handleSubmit = (e: { preventDefault: () => void; }) => {
 					<input
 						className='form-control mt-2'
 						type= "password"
-						placeholder="Password"
+						placeholder="Confirm Password"
 						required
 					    onChange={(e) => setValues({ ...values, confirmPassword: e.target.value })}
 						/>
