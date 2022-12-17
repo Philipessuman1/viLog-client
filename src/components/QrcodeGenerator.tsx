@@ -112,14 +112,18 @@ const QrcodeGenerator = () => {
                 </p>
               )}
             </div>
-            <input  
-             type='host'
-             value={username}
-             className='d-none'
-             {...register("host", {
-            
-            })}
+            <div className='mb-3'>
+              <label className='form-label'>Enter Your Host Id</label>
+                <input
+                className='form-control'  
+                type='host'
+              
+                {...register("host", {
+                  required:true
+                })}
              />
+            </div>
+            
             <button className='btn btn-success m-auto' type="submit">Submit</button>
             </form>
             <div className='w-50 d-flex flex-column'>
